@@ -20,7 +20,7 @@ class Purchase extends React.Component<any, any> {
         console.log(data.get('name'));
 
 
-        fetch('https://green-api-services.azurewebsites.net/testpurphase/purphase', {
+        fetch('https://green-api-services.azurewebsites.net/purphase', {
       method: 'post'  , body: data, headers: {
                 "Content-Type": "application/json"
             }
