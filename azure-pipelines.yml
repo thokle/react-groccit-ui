@@ -4,6 +4,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
+
 - master
 
 pool:
@@ -19,3 +20,12 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
+
+
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Azure subscription 1(f24adaa1-17fa-4f4b-bde1-10eefd86adb8)'
+    appType: 'webApp'
+    WebAppName: 'groccut-ui'
+    packageForLinux: 'build/'
