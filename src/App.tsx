@@ -1,7 +1,17 @@
-import React from 'react';
+import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+
+export  class Appa                  extends Component{
+  constructor(props: any) {
+    super(props);
+  }
+  postData(){
+return "hellp"
+  }
+
+}
 function App() {
   return (
     <div className="App">
@@ -18,9 +28,12 @@ function App() {
         >
           Learn React
         </a>
+         c = new AppA();
+         -->
       </header>
     </div>
   );
 }
+
 
 export default App;
