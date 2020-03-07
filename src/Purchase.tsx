@@ -35,10 +35,10 @@ class Purchase extends React.Component<any, any> {
 
                     <p>
                     <Select id="outlined-basic" label="Type" variant="outlined"  >
-<MenuItem value="Tøj">Tøj</MenuItem>
+                        <MenuItem value="Tøj">Tøj</MenuItem>
                         <MenuItem value="kosmetik">Kosmetik</MenuItem>
-          <MenuItem value="sko">Sko</MenuItem>
-
+                        <MenuItem value="sko">Sko</MenuItem>
+                        <MenuItem value="sko">Børnetøj</MenuItem>
                     </Select>
                     </p>
                     <p>
